@@ -1,10 +1,12 @@
-Summary:	CSS authentication/decryption tools	
+Summary:	CSS authentication/decryption tools
+Summary(pl):	Narzêdzia do autentykacji i dekodowania CSS
 Name:		cssauth
 Version:	0
 Release:	1
 License:	GPL
-Group:		Utilities
-Group(pl):	Narzêdzia
+Group:		Applications
+Group(de):	Applikationen
+Group(pl):	Aplikacje
 Source0:	%{name}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -13,18 +15,23 @@ Tools for authenticating and decrypting CSS-protected DVD. Makes
 playing DVD using MPEG-2 software decoders (like VideoLAN client)
 possible.
 
+%description -l pl
+Narzêdzia do autentykacji i dekodowania p³yt DVD zakodowanych CSS.
+Sprawiaj±, ¿e odtwarzanie DVD przy pomocy programowych dekoderów
+MPEG-2 (jak klient VideoLAN) jest mo¿liwe.
+
 %prep
 %setup -qn css-auth
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_bindir}
-install -s css-cat dvdinfo tstdvd $RPM_BUILD_ROOT%{_bindir}
-install -s reset $RPM_BUILD_ROOT%{_bindir}/dvdreset
+install css-cat dvdinfo tstdvd $RPM_BUILD_ROOT%{_bindir}
+install reset $RPM_BUILD_ROOT%{_bindir}/dvdreset
 
 gzip -9nf README
 
