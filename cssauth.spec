@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://www.uslawbooks.com/computerscience/%{name}.tar.gz
+# Source0-md5:	b815dfc23185d44ba327319030cd6237
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
