@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications
 Group(de):	Applikationen
 Group(pl):	Aplikacje
-Source0:	%{name}.tar.gz
+Source0:	http://www.uslawbooks.com/computerscience/%{name}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
