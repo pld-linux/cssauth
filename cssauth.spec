@@ -23,12 +23,14 @@ MPEG-2 (jak klient VideoLAN) jest mo¿liwe.
 %setup -qn css-auth
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install css-cat dvdinfo tstdvd $RPM_BUILD_ROOT%{_bindir}
 install reset $RPM_BUILD_ROOT%{_bindir}/dvdreset
 
