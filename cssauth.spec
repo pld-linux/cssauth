@@ -1,5 +1,5 @@
 Summary:	CSS authentication/decryption tools
-Summary(pl.UTF-8):   Narzędzia do autentykacji i dekodowania CSS
+Summary(pl.UTF-8):	Narzędzia do autentykacji i dekodowania CSS
 Name:		cssauth
 Version:	0
 Release:	1
