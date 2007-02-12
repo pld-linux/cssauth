@@ -1,5 +1,5 @@
 Summary:	CSS authentication/decryption tools
-Summary(pl):	Narzêdzia do autentykacji i dekodowania CSS
+Summary(pl.UTF-8):   NarzÄ™dzia do autentykacji i dekodowania CSS
 Name:		cssauth
 Version:	0
 Release:	1
@@ -14,10 +14,10 @@ Tools for authenticating and decrypting CSS-protected DVD. Makes
 playing DVD using MPEG-2 software decoders (like VideoLAN client)
 possible.
 
-%description -l pl
-Narzêdzia do autentykacji i dekodowania p³yt DVD zakodowanych CSS.
-Sprawiaj±, ¿e odtwarzanie DVD przy pomocy programowych dekoderów
-MPEG-2 (jak klient VideoLAN) jest mo¿liwe.
+%description -l pl.UTF-8
+NarzÄ™dzia do autentykacji i dekodowania pÅ‚yt DVD zakodowanych CSS.
+SprawiajÄ…, Å¼e odtwarzanie DVD przy pomocy programowych dekoderÃ³w
+MPEG-2 (jak klient VideoLAN) jest moÅ¼liwe.
 
 %prep
 %setup -qn css-auth
